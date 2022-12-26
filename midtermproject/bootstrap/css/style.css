@@ -29,6 +29,16 @@ li.nav-item{
 #razer-logo{
     width: 40px;
 }
-.fyi{
 
+.hero_btn{
+    cursor: pointer;
+}
+.hero_btn a{
+    text-decoration: none;
+}
+.hero_btn a:hover{
+    text-decoration: none;
+}
+nav{
+    border-bottom: rgb(83, 255, 83);
 }

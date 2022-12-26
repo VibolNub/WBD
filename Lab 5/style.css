@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: istok web,'Sans-sherif';
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.menu a{
+    padding: 10px;
+}
+
+.menu{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  background: black;
+  margin-bottom: 20px;
+}
+.menu a{
+    display: block;
+    padding: 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.menu a:hover{
+    background: #444;
+}
+
+.container-1{
+    width: 200px;
+    background-color: #eee;
+}
+.container-1 a{
+    color: #696969;
+    padding-left: 30px;
+}
+.container-1 a:hover{
+    color: #fdb913;
+}
+
+
+.container-2{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+.container-2 a{
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    padding: 30px;
+}
+
+
+footer{
+    background-color: black;
+    text-align: center;
+}
+footer a{
+    color: #696969;
+}
+footer a:hover{
+    color:#fdb913;
+}

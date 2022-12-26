@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.col-menu{
+    background: #4FA095;
+    padding: 10px;
+    border: none;
+    margin: 2px;
+    border-radius: 10px 0;
+    transition: ease-in-out 300ms;
+}
+.col-menu:hover{
+    background-color: #153462;
+    
+}
+.col-menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.image-hero{
+    background-image: url("/img/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 2px;
+}
+
+.col-article{
+    background-color: #4FA095;
+    border: none;
+    padding: 70px 0;
+    text-align: center;
+    color: white;
+    border: 2px white solid;
+    border-radius: 20px;
+}
+
+.col-sm{
+    transform: rotate(-90deg);
+}

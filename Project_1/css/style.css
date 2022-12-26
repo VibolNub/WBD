@@ -1,0 +1,40 @@
+.bg-green{
+    background-color: greenyellow;
+}
+.bg-red{
+    background-color: red;
+    height: auto;
+}
+.bg-pink{
+    background-color: pink;
+}
+.bg-orange{
+    background-color: orange;
+}
+.bg-blue{
+    background-color: blue;
+    height: 150px;
+}
+.bg-light-green{
+    background-color: lightgreen;
+}
+.top-row{
+    height: 50px;
+}
+.row-1{
+    height: 50px;
+}
+.row-2{
+    height: 200px;
+}
+
+.row-last{
+    background-color: lightgreen;
+    height: 50px;
+}
+div{
+    border: 2px white solid;
+}
+.row--3{
+    height: 50px;
+}

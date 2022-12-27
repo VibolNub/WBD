@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -29,16 +30,125 @@ li.nav-item{
 #razer-logo{
     width: 40px;
 }
+.text-light{
+    color: white;
+    font-family: Titillium Web;
 
-.hero_btn{
-    cursor: pointer;
+
 }
-.hero_btn a{
-    text-decoration: none;
+.title{
+    font-size: 4em;
+    font-weight: 600;
 }
-.hero_btn a:hover{
-    text-decoration: none;
+.title-second{
+    font-size: 2rem;
+}
+.title-third{
+    font-size: 250px;
 }
 nav{
-    border-bottom: rgb(83, 255, 83);
+    border-bottom: rgb(83, 255, 83) 2px solid;
+}
+
+.hero{
+    cursor: pointer;
+    background-size: auto;
+    height: 700px;
+    background-repeat: no-repeat;
+    border-bottom: 10px solid #222;
+}
+.hero-1{
+    background-image: url('../img/homepage.jpg');
+}
+.hero-2{
+    background-image: url('../img/homepage-2.jpg');
+}
+.hero-3{
+    background-image: url('../img/homepage-3.jpg');
+}
+.row .hero{
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+
+}
+.hero-4{
+    background-image: url('../img/homepage-4.jpg');
+}
+.hero-5{
+    background-image: url('../img/homepage-5.jpg');
+}
+.hero-6{
+    background-image: url('../img/homepage-6.jpg');
+}
+.hero-7{
+    background-image: url('../img/homepage-7.jpg');
+}
+.hero-8{
+    background-image: url('../img/homepage-8.jpg');
+}
+.hero-9{
+    background-image: url('../img/homepage-9.jpg');
+}
+.ico{
+    color: #44d62c;
+}
+.fab{
+    color: #44d62c;
+}
+.btn-outline{
+    border-color: #44d62c;
+    outline: #44d62c;
+}
+.btn:hover{
+    background-color: #333;
+}
+.link-footer{
+    color: #999;
+    font-family: 'roboto', sans-serif;
+    font-size: 13px;
+}
+.link-footer:hover{
+    color: white;
+    text-decoration: underline;
+}
+.footer-color{
+    background-color: #111;
+}
+.text-uppercase{
+    font-family: 'roboto',sans-serif;
+    font-size: 13px;
+}
+#copyright{
+    font-family: 'roboto',sans-serif;
+    color: #999;
+    font-size: 13px;
+}
+.con{
+    display: block;
+    height: 3px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1px;
+    background: #333;
+    width: 50vw;
+}
+.row .col .hero .title{
+    font-size: 3rem;
+}
+.row .title-second{
+    font-size: 1.5em;
+}
+.row .title-third{
+    font-size: 1.2em;
+}
+
+.col{
+    padding: 0;
 }

@@ -154,7 +154,9 @@ nav{
 }
 
 
-
+.card{
+    
+}
 .text-top-container{
     background-color: #111;
     color: #999;
@@ -164,5 +166,39 @@ nav{
     background-color: #222;
 }
 .card-body{
-    border-bottom: #44d62c 1px solid;
+    border-bottom: #44d62c 2px solid;
+}
+
+.console-1{
+    background: url('/img/co.jpg');
+}
+.console-3{
+    background: url('/img/co-3.jpg');
+}
+.console-4{
+    background: url('/img/co-4.jpg');
+}
+.console-5{
+    background: url('/img/co-5.jpg');
+}
+.mobile-1{
+    background: url('/img/mo.jpg');
+}
+.mobile-5{
+    background: url('/img/mo-5.jpg');
+}
+.life{
+    background: url('/img/li.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.life-1{
+    background: url('/img/li-1.jpg');
+}
+.life-2{
+    background: url('/img/li-2.jpg');
+}
+.life-4{
+    background: url('/img/LI-4.jpg');
 }

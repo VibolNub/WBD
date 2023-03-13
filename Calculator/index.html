@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">    
+        <div class="top-bar" id="topBar">0</div>
+        <div class="grid-container">
+            <button id="span-grid" onclick="clearAll()">CE</button>
+            <button onclick="back()">←</button>
+            <button  id="" onclick="clickNum(this)" value="*">*</button>
+            <button  id="num" onclick="clickNum(this)">7</button>
+            <button  id="num" onclick="clickNum(this)">8</button>
+            <button  id="num" onclick="clickNum(this)" value="9">9</button>
+            <button  id="num" onclick="clickNum(this)">/</button>
+            <button  id="num" onclick="clickNum(this)">4</button>
+            <button  id="num" onclick="clickNum(this)">5</button>
+            <button  id="num" onclick="clickNum(this)">6</button>
+            <button  id="num" onclick="clickNum(this)">-</button>
+            <button  id="num" onclick="clickNum(this)">3</button>
+            <button  id="num" onclick="clickNum(this)">2</button>
+            <button  id="num" onclick="clickNum(this)">1</button>
+            <button  id="num" onclick="clickNum(this)">+</button>
+            <button>⌂</button>
+            <button  id="num" onclick="clickNum(this)">0</button>
+            <button  id="num" onclick="clickNum(this)">.</button>
+            <button onclick="cal()">=</button>
+        
+        </div>
+    </div>
+
+    <script>
+        var mainNum;
+        var newNum =0;
+        function clickNum(newNum){
+
+            //alert(newNum.innerHTML);
+            if(document.getElementById('topBar').innerHTML == 0){
+                document.getElementById('topBar').innerHTML = newNum.innerHTML;
+            }
+            else{
+                document.getElementById('topBar').innerHTML += newNum.innerHTML;
+            }
+        }
+        function cal(){
+            var calc = eval(document.getElementById('topBar').innerHTML);
+            topBar.innerHTML = calc;
+        }
+        function clearAll(){
+            topBar.innerHTML =0;
+        }
+        function back(){
+            document.getElementById('topBar').innerHTML = document.getElementById('topBar').innerHTML.slice(0,-1);
+        }
+    </script>
+</body>
+</html>

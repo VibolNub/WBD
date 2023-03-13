@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            align-items: center;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 2rem;
+        }
+        .container input{
+            outline: none;
+            border: 1px black solid;
+            margin-left: 20px;
+            border-radius: 20px;
+
+        }
+        body{
+            padding-top: 0vh;
+        }
+        .container div{
+            display: flex;
+            padding: 20px 0;
+            justify-content: center;
+        }
+    </style>
+
+    <div class="container">
+        <h1 style="padding-bottom: 40px;text-transform: uppercase;">Date and Time</h1>
+
+        <div id="dateTime"></div>
+    </div>
+
+
+<script>
+    function clock(){
+        var now = new Date();
+    var day = now.getDate();
+    var dayName = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"][new Date().getDay()];
+    var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][new Date().getMonth()];
+    var year = now.getFullYear();
+    var hour = ("0" + now.getHours()).slice(-2);
+    var minute = ("0" + now.getMinutes()).slice(-2);
+    var second = ("0" + now.getSeconds()).slice(-2);
+
+document.getElementById('dateTime').innerHTML =dayName+' '+("0" + day).slice(-2)+' '+ monthNames+' '+year+' '+ hour+':'+minute+':'+second;
+    }
+
+setInterval(clock, 1000);
+
+
+</script>
+
+</body>
+</html>

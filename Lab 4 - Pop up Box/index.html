@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Up</title>
+</head>
+<body>
+    
+<script>
+    alert('Welcome to EDC');
+    var cusID = prompt('Enter your Customer ID: ');
+    var cusName = prompt('Enter your name: ');
+    var usageKWH = prompt('Enter your usage in KWH: ');
+    var total = usageKWH*1000;
+
+            if (confirm("Do you want to include trash collection fee?") == true) {
+        total += 5000};
+
+    alert('Result: \nDear '+cusName+'\nYour total payment is: '+total+'KHR');
+
+</script>
+
+</body>
+</html>

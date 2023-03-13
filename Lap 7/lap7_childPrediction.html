@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child Prediction</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            align-items: center;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 2rem;
+        }
+        .container input{
+            outline: none;
+            border: 1px black solid;
+            margin-left: 20px;
+            border-radius: 20px;
+
+        }
+        body{
+            padding-top: 0vh;
+        }
+        .container div{
+            display: flex;
+            padding: 20px 0;
+            justify-content: center;
+        }
+        #button{
+            border: black 2px solid;
+            border-radius: 20px;
+            padding: 20px 30px;
+        }
+        #button:hover{
+            background-color: bisque;
+            cursor: pointer;
+        }
+        #button:active{
+            background-color: azure;
+        }
+    </style>
+
+    <div class="container">
+        <h1 style="padding-bottom: 40px;text-transform: uppercase;">Child Prediction</h1>
+        <div class="Father">
+            <div>Father's Name: </div>
+            <input type="text" id="nameFather">
+        </div>
+        <div class="Mother">
+            <div>Mother's Name: </div>
+            <input type="text" id="nameMother">
+        </div>
+        <button id="button" onclick="resultGender()">Result</button>
+        <div id="redultChild"></div>
+    </div>
+
+
+<script>
+
+    function resultGender(){
+
+        var dadName = document.getElementById('nameFather').value.replace(/\s/gm, '');
+        var momName = document.getElementById('nameMother').value.replace(/\s/gm, '');
+        var childName = dadName.length + momName.length;
+
+
+        if(childName % 2 == 0) {
+    document.getElementById('redultChild').innerHTML = 'The Child Will Be A Girl';
+    document.body.style.backgroundColor = "pink";
+        }
+        else {
+    document.getElementById('redultChild').innerHTML = 'The Child Will Be A Boy';
+    document.body.style.background = "#87CEEB";
+        }
+
+    }
+
+</script>
+
+</body>
+</html>
